@@ -48,9 +48,11 @@ A-B &= \omega t+\beta(t)-[\omega t+\omega s+\beta(t+s)] = -\omega s + \beta(t)-\
 $$
 
 由余弦偶函数$\cos(-x)=\cos x$：
+
 $$\cos(A-B) = \cos[\omega s + \beta(t+s)-\beta(t)]$$
 
 代入交叉项：
+
 $$
 \begin{aligned}
 2E_0^2\cos A\cos B &= E_0^2 \cos[2\omega t+\omega s+\beta(t)+\beta(t+s)] \\
@@ -59,6 +61,7 @@ $$
 $$
 
 ## 四、完整四项瞬时光强总式
+
 $$
 \begin{aligned}
 I(t) &= E_0^2 \cos^2[\omega t+\beta(t)] \\
@@ -79,6 +82,7 @@ $$\overline{I} = \frac{1}{T}\int_{0}^{T} I(t) dt$$
 $T$为探测器响应时间，$T \gg 10^{-14}\ \text{s}$。
 
 ### 1. 第一项平均
+
 $$
 \overline{E_0^2\cos^2[\omega t+\beta(t)]}
 = E_0^2 \cdot \frac{1}{T}\int_0^T \frac{1+\cos[2\omega t+2\beta(t)]}{2}dt
@@ -86,23 +90,27 @@ $$
 $$
 
 ### 2. 第二项平均
+
 $$
 \overline{E_0^2\cos^2[\omega t+\omega s+\beta(t+s)]} = \frac{E_0^2}{2}
 $$
 
 ### 3. 第三项平均
 高频振荡积分抵消为0：
+
 $$
 \overline{E_0^2 \cos[2\omega t+\omega s+\beta(t)+\beta(t+s)]} = 0
 $$
 
 ### 4. 第四项平均（干涉核心项）
+
 $$
 \overline{E_0^2 \cos[\omega s+\beta(t+s)-\beta(t)]}
 = E_0^2 \cdot \frac{1}{T}\int_{0}^{T} \cos[\omega s + \beta(t+s)-\beta(t)] dt
 $$
 
 ## 六、最终平均光强合并式
+
 $$
 \begin{aligned}
 \overline{I}
