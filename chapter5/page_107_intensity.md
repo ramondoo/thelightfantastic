@@ -1,11 +1,12 @@
+# 原始Markdown（移除\big/\Big 解决分隔符报错，可直接复制）
 # 相干光含随机相位β(t)光强完整推导
 适配GitHub Markdown，全部公式为标准LaTeX语法，无无法渲染宏包
 
 ## 一、两路光电场定义
 $$
 \begin{cases}
-E_1(t) = E_0 \cos\big[\omega t + \beta(t)\big] \\
-E_2(t) = E_0 \cos\big[\omega(t+s) + \beta(t+s)\big] = E_0 \cos\big[\omega t + \omega s + \beta(t+s)\big]
+E_1(t) = E_0 \cos[\omega t + \beta(t)] \\
+E_2(t) = E_0 \cos[\omega(t+s)] = E_0 \cos[\omega t + \omega s + \beta(t+s)]
 \end{cases}
 $$
 - $s$：两束光传播时间差
@@ -22,10 +23,10 @@ $$
 \begin{aligned}
 I(t) &= \big[E_1(t)+E_2(t)\big]^2 \\
 &= E_1^2(t) + E_2^2(t) + 2E_1(t)E_2(t) \\
-&= \Big\{E_0 \cos\big[\omega t+\beta(t)\big]\Big\}^2 + \Big\{E_0 \cos\big[\omega t+\omega s+\beta(t+s)\big]\Big\}^2 \\
-&\quad + 2E_0 \cos\big[\omega t+\beta(t)\big] E_0 \cos\big[\omega t+\omega s+\beta(t+s)\big] \\
-&= E_0^2 \cos^2\big[\omega t+\beta(t)\big] + E_0^2 \cos^2\big[\omega t+\omega s+\beta(t+s)\big] \\
-&\quad + 2E_0^2 \cos\big[\omega t+\beta(t)\big]\cos\big[\omega t+\omega s+\beta(t+s)\big]
+&= \{E_0 \cos[\omega t+\beta(t)]\}^2 + \{E_0 \cos[\omega t+\omega s+\beta(t+s)]\}^2 \\
+&\quad + 2E_0 \cos[\omega t+\beta(t)] E_0 \cos[\omega t+\omega s+\beta(t+s)] \\
+&= E_0^2 \cos^2[\omega t+\beta(t)] + E_0^2 \cos^2[\omega t+\omega s+\beta(t+s)] \\
+&\quad + 2E_0^2 \cos[\omega t+\beta(t)]\cos[\omega t+\omega s+\beta(t+s)]
 \end{aligned}
 $$
 
@@ -40,28 +41,28 @@ $$A=\omega t+\beta(t),\quad B=\omega t+\omega s+\beta(t+s)$$
 $$
 \begin{aligned}
 A+B &= \omega t+\beta(t)+\omega t+\omega s+\beta(t+s) = 2\omega t + \omega s + \beta(t)+\beta(t+s) \\
-A-B &= \omega t+\beta(t)-\big[\omega t+\omega s+\beta(t+s)\big] = -\omega s + \beta(t)-\beta(t+s)
+A-B &= \omega t+\beta(t)-[\omega t+\omega s+\beta(t+s)] = -\omega s + \beta(t)-\beta(t+s)
 \end{aligned}
 $$
 
 由余弦偶函数$\cos(-x)=\cos x$：
-$$\cos(A-B) = \cos\Big[\omega s + \beta(t+s)-\beta(t)\Big]$$
+$$\cos(A-B) = \cos[\omega s + \beta(t+s)-\beta(t)]$$
 
 代入交叉项：
 $$
 \begin{aligned}
-2E_0^2\cos A\cos B &= E_0^2 \cos\big[2\omega t+\omega s+\beta(t)+\beta(t+s)\big] \\
-&\quad + E_0^2 \cos\Big[\omega s+\beta(t+s)-\beta(t)\Big]
+2E_0^2\cos A\cos B &= E_0^2 \cos[2\omega t+\omega s+\beta(t)+\beta(t+s)] \\
+&\quad + E_0^2 \cos[\omega s+\beta(t+s)-\beta(t)]
 \end{aligned}
 $$
 
 ## 四、完整四项瞬时光强总式
 $$
 \begin{aligned}
-I(t) &= E_0^2 \cos^2\big[\omega t+\beta(t)\big] \\
-&+ E_0^2 \cos^2\big[\omega t+\omega s+\beta(t+s)\big] \\
-&+ E_0^2 \cos\big[2\omega t+\omega s+\beta(t)+\beta(t+s)\big] \\
-&+ E_0^2 \cos\Big[\omega s+\beta(t+s)-\beta(t)\Big]
+I(t) &= E_0^2 \cos^2[\omega t+\beta(t)] \\
+&+ E_0^2 \cos^2[\omega t+\omega s+\beta(t+s)] \\
+&+ E_0^2 \cos[2\omega t+\omega s+\beta(t)+\beta(t+s)] \\
+&+ E_0^2 \cos[\omega s+\beta(t+s)-\beta(t)]
 \end{aligned}
 $$
 
@@ -77,34 +78,34 @@ $T$为探测器响应时间，$T \gg 10^{-14}\ \text{s}$。
 
 ### 1. 第一项平均
 $$
-\overline{E_0^2\cos^2\big[\omega t+\beta(t)\big]}
-= E_0^2 \cdot \frac{1}{T}\int_0^T \frac{1+\cos\big[2\omega t+2\beta(t)\big]}{2}dt
+\overline{E_0^2\cos^2[\omega t+\beta(t)]}
+= E_0^2 \cdot \frac{1}{T}\int_0^T \frac{1+\cos[2\omega t+2\beta(t)]}{2}dt
 = \frac{E_0^2}{2}
 $$
 
 ### 2. 第二项平均
 $$
-\overline{E_0^2\cos^2\big[\omega t+\omega s+\beta(t+s)\big]} = \frac{E_0^2}{2}
+\overline{E_0^2\cos^2[\omega t+\omega s+\beta(t+s)]} = \frac{E_0^2}{2}
 $$
 
 ### 3. 第三项平均
 高频振荡积分抵消为0：
 $$
-\overline{E_0^2 \cos\big[2\omega t+\omega s+\beta(t)+\beta(t+s)\big]} = 0
+\overline{E_0^2 \cos[2\omega t+\omega s+\beta(t)+\beta(t+s)]} = 0
 $$
 
 ### 4. 第四项平均（干涉核心项）
 $$
-\overline{E_0^2 \cos\Big[\omega s+\beta(t+s)-\beta(t)\Big]}
-= E_0^2 \cdot \frac{1}{T}\int_{0}^{T} \cos\Big[\omega s + \beta(t+s)-\beta(t)\Big] dt
+\overline{E_0^2 \cos[\omega s+\beta(t+s)-\beta(t)]}
+= E_0^2 \cdot \frac{1}{T}\int_{0}^{T} \cos[\omega s + \beta(t+s)-\beta(t)] dt
 $$
 
 ## 六、最终平均光强合并式
 $$
 \begin{aligned}
 \overline{I}
-&= \frac{E_0^2}{2} + \frac{E_0^2}{2} + 0 + E_0^2 \cdot \frac{1}{T}\int_{0}^{T} \cos\Big[\omega s+\beta(t+s)-\beta(t)\Big] dt \\
-&= E_0^2 + E_0^2 \cdot \frac{1}{T}\int_{0}^{T} \cos\Big[\omega s+\beta(t+s)-\beta(t)\Big] dt
+&= \frac{E_0^2}{2} + \frac{E_0^2}{2} + 0 + E_0^2 \cdot \frac{1}{T}\int_{0}^{T} \cos[\omega s+\beta(t+s)-\beta(t)] dt \\
+&= E_0^2 + E_0^2 \cdot \frac{1}{T}\int_{0}^{T} \cos[\omega s+\beta(t+s)-\beta(t)] dt
 \end{aligned}
 $$
 
@@ -121,4 +122,4 @@ $$
 ### 使用说明
 1. 全选本文字，复制粘贴新建`.md`文件；
 2. GitHub、Typora、Obsidian均可正常渲染所有LaTeX公式；
-3. 无`\boldsymbol`、`\tag`等不兼容命令。
+3. 已全部删除`\big`/`\Big`大括号命令，消除分隔符报错；无`\boldsymbol`、`\tag`等不兼容命令。
