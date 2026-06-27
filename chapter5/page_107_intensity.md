@@ -94,7 +94,7 @@ $$
 ### 2. 第二项平均
 
 $$
-\overline{ E_0^2 \cos^2[\omega t+\omega s+\beta(t+s)]}  = \frac{E_0^2}{2}
+\overline{text{ E_0^2 \cos^2[\omega t+\omega s+\beta(t+s)]}}  = \frac{E_0^2}{2}
 $$
 
 ### 3. 第三项平均
