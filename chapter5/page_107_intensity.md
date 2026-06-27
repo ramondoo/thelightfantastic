@@ -47,7 +47,7 @@ A-B &= \omega t+\beta(t)-[\omega t+\omega s+\beta(t+s)] = -\omega s + \beta(t)-\
 \end{aligned}
 $$
 
-由余弦偶函数$\cos(-x)=\cos x$：
+由余弦偶函数 $\cos(-x)=\cos x$ ：
 
 $$\cos(A-B) = \cos[\omega s + \beta(t+s)-\beta(t)]$$
 
@@ -94,14 +94,14 @@ $$
 ### 2. 第二项平均
 
 $$
-\overline{E_0^2\cos^2[\omega t+\omega s+\beta(t+s)]} = \frac{E_0^2}{2}
+\overline{ E_0^2 \cos^2[\omega t+\omega s+\beta(t+s)]}  = \frac{E_0^2}{2}
 $$
 
 ### 3. 第三项平均
 高频振荡积分抵消为0：
 
 $$
-\overline{E_0^2 \cos[2\omega t+\omega s+\beta(t)+\beta(t+s)]} = 0
+\overline{ E_0^2 \cos[2\omega t+\omega s+\beta(t)+\beta(t+s)] } = 0
 $$
 
 ### 4. 第四项平均（干涉核心项）
