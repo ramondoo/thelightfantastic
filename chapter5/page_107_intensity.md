@@ -39,6 +39,7 @@ $$2\cos A \cos B = \cos(A+B) + \cos(A-B)$$
 $$A=\omega t+\beta(t),\quad B=\omega t+\omega s+\beta(t+s)$$
 
 相位和、相位差：
+
 $$
 \begin{aligned}
 A+B &= \omega t+\beta(t)+\omega t+\omega s+\beta(t+s) = 2\omega t + \omega s + \beta(t)+\beta(t+s) \\
